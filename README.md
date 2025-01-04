@@ -37,13 +37,13 @@ https://kubernetes.io/blog/2020/05/21/wsl-docker-kubernetes-on-the-windows-deskt
 https://spacelift.io/blog/lens-kubernetes
 ```
 
-### 2. Create a Kubernetes Cluster with Minikube
-#### 2.1 Create a Cluster
+### 2. Create a Kubernetes cluster with Minikube
+#### 2.1 Create a cluster
 ```sh
 minikube start --nodes 3 -p hadoop-ecosystem
 ```
 
-#### 2.2 Label Nodes
+#### 2.2 Label nodes
 ```sh
 kubectl label node hadoop-ecosystem-m02 node-role.kubernetes.io/worker=worker & kubectl label nodes hadoop-ecosystem-m02 role=worker
 ```
@@ -52,7 +52,7 @@ kubectl label node hadoop-ecosystem-m03 node-role.kubernetes.io/worker=worker & 
 ```
 
 ### 3. Deploy system
-#### 3.0 Create Namespace
+#### 3.0 Create namespace
 ```sh
 kubectl create namespace hadoop-ecosystem & kubectl config set-context --current --namespace=hadoop-ecosystem
 ```
@@ -64,7 +64,7 @@ kubectl create -f ./kubernetes/flask
 
 #### 3.2 Deploy Kafka
 ```sh
-helm install kafka ./kubernetes/kafka
+kubectl create -f ./kubernetes/kafka
 ```
 
 #### 3.3 Deploy Airflow
@@ -93,12 +93,12 @@ helm install superset ./kubernetes/superset
 ```
 
 ### 4. Pre-use
-#### 4.1 Download Data source
+#### 4.1 Download data source
 ```
 https://www.kaggle.com/datasets/robikscube/flight-delay-dataset-20182022/data?select=readme.md
 ```
 
-#### 4.2 Move Data source to System
+#### 4.2 Move data source to system
 ```sh
 kubectl cp /path/to/datasource <pod-flask-1>:/data & kubectl cp /path/to/datasource <pod-flask-2>:/data
 ```
