@@ -111,4 +111,7 @@ Read in readme.md in folder builded-airflow
 ## Demo
 
 ## Report
-
+<ul>
+  <li><a href="https://github.com/Tran-Ngoc-Bao/Hadoop_Ecosystem_With_K8s/blob/master/report/report.pdf">Report</a></li>
+  <li><a href="https://github.com/Tran-Ngoc-Bao/Hadoop_Ecosystem_With_K8s/blob/master/report/slide.pptx">Slide</a></li>
+</ul>
