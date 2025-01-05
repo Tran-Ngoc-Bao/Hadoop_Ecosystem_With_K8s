@@ -109,7 +109,15 @@ Read in readme.md in folder builded-airflow
 ```
 
 ## Demo
-
+### 1. System overview
+  <img src="https://github.com/Tran-Ngoc-Bao/Hadoop_Ecosystem_With_K8s/blob/master/pictures/report/overview.png">
+  
+### 2. Data flow
+  <img src="https://github.com/Tran-Ngoc-Bao/Hadoop_Ecosystem_With_K8s/blob/master/pictures/result/airflow_result_1.png">
+  
+### 3. Demo output
+  <img src="https://github.com/Tran-Ngoc-Bao/Hadoop_Ecosystem_With_K8s/blob/master/pictures/charts/phan-ph%E1%BB%91i-m%E1%BA%A1ng-l%C6%B0%E1%BB%9Bi-ti%E1%BA%BFp-th%E1%BB%8B-hang-khong-quy-1-2020.jpg">
+  
 ## Report
 <ul>
   <li><a href="https://github.com/Tran-Ngoc-Bao/Hadoop_Ecosystem_With_K8s/blob/master/report/report.pdf">Report</a></li>
