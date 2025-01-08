@@ -1,4 +1,4 @@
-# IT4997 - Graduation thesis - SOICT- HUST
+# IT4997 - Bachelor Thesis - SOICT- HUST
 
 ## Introduction
 <ul>
