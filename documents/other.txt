@@ -1,0 +1,17 @@
+Tại sao lại chọn kiến trúc hồ dữ liệu ?
+    Làm bật được ưu, nhược điểm của hồ dữ liệu khi so sánh với kho dữ liệu và hồ kho dữ liệu.
+        Chi phí lưu trữ thấp nhất
+        Dễ dàng mở rộng, dễ dàng triển khai
+
+Tại sao lại chọn hệ sinh thái Hadoop ?
+    So sánh với các hệ sinh thái cloud: AWS, GCP, Azure
+        Mã nguồn mở
+        Phổ biến, cộng đồng sử dụng lớn
+        Khả năng tích hợp lớn
+        An toàn, bảo mật
+
+Tại sao lại chọn dữ liệu chuyến bay ?
+    Nguồn dữ liệu uy tín trên Kaggle
+    Nguồn dữ liệu vừa đủ lớn trong phạm vi đồ ánh
+    Có nhiều trường dữ liệu để phân tích
+    Dữ liệu có thể mang lại giá trị kinh tế lớn sau khi phân tích
