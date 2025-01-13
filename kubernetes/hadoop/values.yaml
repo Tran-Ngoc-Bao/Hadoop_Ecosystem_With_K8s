@@ -71,10 +71,10 @@ yarn:
     resources:
       requests:
         memory: "4096Mi"
-        cpu: "2000m"
+        cpu: "3000m"
       limits:
         memory: "4096Mi"
-        cpu: "2000m"
+        cpu: "3000m"
 
 persistence:
   nameNode:
