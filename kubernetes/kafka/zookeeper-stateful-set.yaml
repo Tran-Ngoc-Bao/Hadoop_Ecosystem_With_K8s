@@ -22,8 +22,8 @@ spec:
         role: worker
       containers:
         - name: zookeeper
-          imagePullPolicy: Always
-          image: zookeeper
+          imagePullPolicy: IfNotPresent
+          image: confluentinc/cp-zookeeper
           ports:
             - containerPort: 2181
           env:
