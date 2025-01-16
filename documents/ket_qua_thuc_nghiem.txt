@@ -1,0 +1,23 @@
+Bạn đã kiểm tra hiệu suất hệ thống như thế nào? Kết quả ra sao?
+
+
+Làm sao bạn đánh giá được tính chịu lỗi của hệ thống khi một thành phần gặp sự cố?
+
+
+Kết quả trực quan hóa dữ liệu từ Superset cho thấy điều gì quan trọng?
+
+
+Hệ thống của bạn có thể áp dụng vào thực tế không? Nếu có, cần điều chỉnh gì thêm?
+
+
+Về các khó khăn và hướng phát triển:
+
+
+Khó khăn lớn nhất bạn gặp phải khi thực hiện đồ án này là gì? Bạn đã giải quyết như thế nào?
+
+
+Bạn có dự định phát triển thêm tính năng gì cho hệ thống này không?
+
+
+Hệ thống của bạn có thể hỗ trợ phân tích học máy hoặc trí tuệ nhân tạo không?
+

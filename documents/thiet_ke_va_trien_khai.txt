@@ -1,0 +1,11 @@
+Mô-đun thu thập dữ liệu của bạn hoạt động như thế nào? Làm sao để đảm bảo tính liên tục và chính xác của dữ liệu?
+
+
+Làm thế nào bạn đảm bảo tính chịu lỗi và khả năng mở rộng của hệ thống?
+
+
+Tại sao bạn sử dụng Apache Superset cho việc trực quan hóa dữ liệu? Có giải pháp thay thế nào không?
+
+
+Trong thiết kế hệ thống, bước nào là quan trọng nhất? Tại sao?
+

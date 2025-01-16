@@ -1,0 +1,27 @@
+Tại sao bạn chọn hệ sinh thái Hadoop cho hệ thống của mình thay vì các nền tảng đám mây khác như AWS hay Google Cloud?
+    Dữ liệu lưu trữ cần tính riêng tư, bảo mật cao.
+    Không bị phụ thuộc vào các nhà cung cấp dịch vụ khác.
+    Cộng đồng sử dụng vẫn rất lớn.
+    Phù hợp với các doanh nghiệp vừa và lớn.
+
+Bạn có thể giải thích sự khác biệt giữa kho dữ liệu, hồ dữ liệu và hồ kho dữ liệu không? Vì sao bạn chọn hồ dữ liệu?
+    So với kho dữ liệu: Khả năng lưu trữ dữ liệu bán cấu trúc, phi cấu trúc. Khả năng lưu trữ dữ liệu lớn hơn, linh hoạt hơn.
+    So với hồ kho dữ liệu: Chi phí thấp hơn. Triển khai đơn giản hơn.
+    Triển khai kết hợp với công cụ truy vấn và trực quan hóa dữ liệu để bổ sung các tính năng từ kho dữ liệu trên trên hồ dữ liệu.
+
+Vai trò của Apache Kafka và Spark Streaming trong hệ thống của bạn là gì? Tại sao lại cần xử lý thời gian thực?
+    Mong muốn bài toán có phần xử lý thời gian thực và phần triển khai hệ thống phức tạp hơn.
+    Giả lập quá trình thu thập dữ liệu thực tế.
+    Sau này có thể phát triển thêm tính năng trực quan hóa dữ liệu thời gian thực.
+
+Trino hoạt động như thế nào trong việc hỗ trợ truy vấn dữ liệu phân tán? Nó có ưu điểm gì hơn Hive không?
+    Hoạt động theo chế độ coordinator-worker đảm bảo phân hóa chức năng.
+    Các câu truy vấn được chia thành các màn (stage), các màn đưọc chia thành các tác vụ (task), các tác vụ đưọc chia thành các split giúp dữ liệu đưọc truy vấn theo đường ống (pipeline) và thực hiện song song trên các node worker.
+    Cùng với kết nối (connector) Hive tạo nên cơ sở dữ liệu của hệ thống, nếu thiết kế theo tiêu chuẩn Kimball, Inmon, Data vault sẽ tạo nên kho dữ liệu của hệ thống.
+    Với connector và catalog có thể truy vấn dữ liệu từ bất kỳ nguồn nào.
+
+Kubernetes hỗ trợ hệ thống của bạn ra sao trong việc triển khai và quản lý?
+    Hỗ trợ phân phối, quản lý tài nguyên, cân bằng tải tốt.
+    Dễ dàng mở rộng hệ thống.
+    Đảm bảo tính sẵn sàng cao, chịu lỗi của hệ thống.
+    Gần với môi trường sử dụng.
