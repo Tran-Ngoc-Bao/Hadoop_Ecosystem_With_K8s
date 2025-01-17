@@ -1,1 +1,13 @@
+Tại sao lại cung cấp API không phải file
+    Khi dữ liệu tăng lên thì việc tải một file vài chục GiB và import vào hệ thống sẽ rủi ro hơn.
+    Sau này khi muốn chỉ láy dữ liệu theo hãng hàng không, địa điểm xuất phát, ...  Thêm tham số vào API sẽ linh hoạt hơn thay vì chia nhỏ các file ra rất nhiều file tương đối phức tạp và khó quản lý.
+    Phù hợp với bài toán xử lý dữ liệu thời gian thực hơn.
 
+Tại sao thời gian chạy một lần DAG lại ngắn thế
+    Chỉ chạy 10 nghìn bản ghi rồi bắt đầu vòng chạy mới, vì chạy tới 30, 40 nghìn bản ghi máy bị crash CPU và nghẽn ghi dữ liệu vào ổ đĩa trên máy.
+    Để cho ra kết quả cuối cùng, vẫn phải lấy dữ liệu theo lô từ file đưa cho Spark để ghi vào HDFS.
+    Quá trình thu thập dữ liệu chỉ dừng ở mức thu thập dữ liệu thực tế.
+
+Giải thích sự lựa chọn Statefuleset và Deployment cho mỗi dịch vụ
+    Deployment là dạng stateless, các pod sẽ có chung một Persistent Volume Claim, phù hợp với các dịch vụ không cần lưu trữ dữ liệu như: Trino, webserver của Airflow, Kafka, Superset.
+    Statefuleset, mỗi pod sẽ có một Persistent Volume Claim, phù hợp với việc lưu trữ dữ liệu bền vững như: các broker của cụm Kafka, Zookeeper, Postgres, Redis.

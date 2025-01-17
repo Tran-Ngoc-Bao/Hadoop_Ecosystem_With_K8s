@@ -1,11 +1,20 @@
 Mô-đun thu thập dữ liệu của bạn hoạt động như thế nào? Làm sao để đảm bảo tính liên tục và chính xác của dữ liệu?
-
+    Tính năng lập lịch tác vụ, giám sát, chạy lại của Airflow.
+    Hiện tại chưa có tính năng quản lý chất lượng dữ liệu, tuy nhiên trong quá trình xử lý dữ liệu có hoạt động làm sạch, biến đổi dữ liệu đủ đảm bảo dữ liệu đủ tốt.
+    Kafka và Spark Streaming cũng đảm bảo tính liên tục của dữ liệu.
 
 Làm thế nào bạn đảm bảo tính chịu lỗi và khả năng mở rộng của hệ thống?
-
+    Kubernetes đảm bảo tính chịu lỗi và khả năng mở rộng của hệ thống.
+    Tách biệt chức năng lưu trữ và xử lý của hệ thống, đồng thời các mô-đun của hệ thống đều triển khai theo kiến trúc với master-slave để khả năng mở rộng từng phần linh hoạt.
+    Các cụm Kafka, HDFS, YARN, Trino đều được triển khai từ 3 đến 4 node đảm bảo tính chịu lỗi của hệ thống.
 
 Tại sao bạn sử dụng Apache Superset cho việc trực quan hóa dữ liệu? Có giải pháp thay thế nào không?
-
+    Superset là công cụ trực quan hóa dữ liệu mã nguồn mở, có cộng đồng sử dụng lớn.
+    Superset có khả năng tùy biến biểu đồ phong phú, kết nối được với hầu hết các cơ sở dữ liệu.
+    Có các công cụ như Power BI, Tableu tuy nhiên đều phải trả phí.
 
 Trong thiết kế hệ thống, bước nào là quan trọng nhất? Tại sao?
-
+    Thiết kế tổng quan hệ thống.
+    Việc chia nhỏ các mô-đun của hệ thống để phân hóa chức năng.
+    Lựa chọn các công nghệ phù hợp cho từng mô-đun, đảm bảo các công nghệ phải tích hợp tốt với nhau.
+    Xây dựng luồng dữ liệu thích hợp, đủ độ khó cho bài toàn.
