@@ -1,11 +1,18 @@
 Bạn đã kiểm tra hiệu suất hệ thống như thế nào? Kết quả ra sao?
-
+    Sử dụng phần mềm Lens để kiểm soát hệ thống Kubernetes, giúp đọc lỗi dễ dàng hơn, đảm bảo hệ thống luôn chạy.
+    Trong mỗi cụm dịch vụ của hệ thống đều có lưu trữ siêu dữ liệu và log của cụm.
+    Trên YARN có lưu log về thời gian, tài nguyên sử dụng của các job Spark giúp hoạt động tối ưu hóa code xử lý dữ liệu.
+    Trên Trino có phân tích, đánh giá của câu truy vấn giúp hoạt động tối ưu hóa câu truy vấn.
 
 Làm sao bạn đánh giá được tính chịu lỗi của hệ thống khi một thành phần gặp sự cố?
-
+    Phân hóa hệ thống ra từng mô-đun nhỏ và tách biệt chức năng quản lý, lưu trữ và xử lý của hệ thống giảm độ nghiêm trọng khi hệ thống bị lỗi.
+    Triển khai phân tán với các Replicaset, Statefulset của Kubernetes đảm bảo hệ thống có tính sẵn sàng cao khi một thành phần của cụm dịch vụ gặp lỗi.
 
 Kết quả trực quan hóa dữ liệu từ Superset cho thấy điều gì quan trọng?
-
+    Xu hướng hành vi và nhu cầu của hành khách.
+    Hiệu suất và tính ổn định của các hãng hàng không.
+    Điểm mạnh, điểm yếu của các hãng hàng không.
+    Các khu vực hoặc thời điểm cần tập trung cải thiện để tối ưu hóa dịch vụ và tăng hiệu quả hoạt động.
 
 Hệ thống của bạn có thể áp dụng vào thực tế không? Nếu có, cần điều chỉnh gì thêm?
 
