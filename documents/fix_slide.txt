@@ -1,0 +1,25 @@
+Hàng đợi thông điệp
+
+Nói rõ hơn về K8s
+    Kubernetes là một hệ thống mã nguồn mở dùng để tự động hóa việc triển khai, quản lý và mở rộng các ứng dụng container. Nó giúp quản lý các container trên nhiều máy chủ, đảm bảo sự sẵn sàng, mở rộng tự động, và phân phối tài nguyên một cách hiệu quả.
+
+    Chuyển 2 ảnh K8s lên đây.
+
+Tự động hóa -> 2 ảnh Airflow
+    Đầu tiên, em xin trình bày về tính tự động hóa của hệ thống.
+    Ảnh bên trái là kết quả chạy luồng xử lý dữ liệu một cách tự động hóa bởi Airflow.
+    Ảnh bên phải là kết quả lập lịch xử lý dữ liệu giả lập theo hàng tháng bởi Airflow.
+
+Khả mở -> 2 ảnh Kafka
+    Tiếp theo, em xin trình bày về tính khả mở của hệ thống.
+    Ảnh trên là câu lệnh em mở rộng số Zookeeper từ 1 lên 2 và số broker từ 3 lên 4 của cụm Kafka.
+    Ảnh dưới là kết quả gia tăng số node broker và Zookeeper của cụm Kafka để đảm bảo tính sẵn sàng cao và chịu lỗi của dịch vụ.
+
+Chịu lỗi -> 2 ảnh Kafka
+    Tiếp theo, em xin trình bày về tính chịu lỗi của hệ thống, ở đây em có ví dụ về tính chịu lỗi của cụm Kafka.
+    Ảnh trên là trạng thái của cụm broker với số broker là 3, số partition là 3/3 với broker số 3 được Zookeeper chọn làm leader.
+    Ảnh dưới là kết quả em tắt broker số 3 thì số broker lúc đó là 2, số partition là 2/3 với broker số 2 được Zookeeper chọn làm leader và cụm Kafka vẫn hoạt động bình thường với số Replicas vẫn là 3/3.
+
+Giới thiệu về các biểu đồ, không nhận xét
+
+Gạch đầu dòng kết luận
