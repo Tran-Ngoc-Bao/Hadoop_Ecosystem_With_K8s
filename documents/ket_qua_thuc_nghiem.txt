@@ -13,18 +13,3 @@ Kết quả trực quan hóa dữ liệu từ Superset cho thấy điều gì qu
     Hiệu suất và tính ổn định của các hãng hàng không.
     Điểm mạnh, điểm yếu của các hãng hàng không.
     Các khu vực hoặc thời điểm cần tập trung cải thiện để tối ưu hóa dịch vụ và tăng hiệu quả hoạt động.
-
-Hệ thống của bạn có thể áp dụng vào thực tế không? Nếu có, cần điều chỉnh gì thêm?
-
-
-Về các khó khăn và hướng phát triển:
-
-
-Khó khăn lớn nhất bạn gặp phải khi thực hiện đồ án này là gì? Bạn đã giải quyết như thế nào?
-
-
-Bạn có dự định phát triển thêm tính năng gì cho hệ thống này không?
-
-
-Hệ thống của bạn có thể hỗ trợ phân tích học máy hoặc trí tuệ nhân tạo không?
-
