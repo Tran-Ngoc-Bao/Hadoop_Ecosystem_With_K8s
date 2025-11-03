@@ -100,23 +100,21 @@ https://www.kaggle.com/datasets/robikscube/flight-delay-dataset-20182022/data?se
 
 #### 4.2 Move data source to system
 ```sh
-kubectl cp /path/to/datasource <pod-flask-1>:/data & kubectl cp /path/to/datasource <pod-flask-2>:/data
+kubectl cp /path/to/datasource <pod-flask>:/data
 ```
 
 #### 4.3 Config Spark and Hadoop on Airflow
-```
-Read in readme.md in folder builded-airflow
-```
+Read in <a href="https://github.com/Tran-Ngoc-Bao/Hadoop_Ecosystem_With_K8s/blob/master/builded-airflow/readme.md">README.md</a> in folder builded-airflow
 
 ## Demo
 ### System overview
-  <img src="https://github.com/Tran-Ngoc-Bao/Hadoop_Ecosystem_With_K8s/blob/master/pictures/report/overview.png">
+<img src="https://github.com/Tran-Ngoc-Bao/Hadoop_Ecosystem_With_K8s/blob/master/pictures/report/overview.png">
   
 ### Data flow
-  <img src="https://github.com/Tran-Ngoc-Bao/Hadoop_Ecosystem_With_K8s/blob/master/pictures/result/airflow_result_1.png">
+<img src="https://github.com/Tran-Ngoc-Bao/Hadoop_Ecosystem_With_K8s/blob/master/pictures/result/airflow_result_1.png">
   
 ### Demo output
-  <img src="https://github.com/Tran-Ngoc-Bao/Hadoop_Ecosystem_With_K8s/blob/master/pictures/charts/s%E1%BB%91-chuy%E1%BA%BFn-bay-theo-thang-qua-cac-nam-2024-12-01T13-13-34.441Z.jpg">
+<img src="https://github.com/Tran-Ngoc-Bao/Hadoop_Ecosystem_With_K8s/blob/master/pictures/charts/s%E1%BB%91-chuy%E1%BA%BFn-bay-theo-thang-qua-cac-nam-2024-12-01T13-13-34.441Z.jpg">
   
 ## Report
 <ul>
